@@ -2,96 +2,122 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>دفتر خدمات هوشمند</title><style>
+<title>Smart Services Office</title><style>
 
 body{
-    font-family:Tahoma, sans-serif;
-    background:#f4f6f9;
     margin:0;
+    font-family:Tahoma;
+    background: linear-gradient(135deg,#0f172a,#1e3a8a);
+    color:white;
+}
+
+/* container */
+.container{
+    max-width:650px;
+    margin:auto;
     padding:20px;
 }
 
-.container{
-    max-width:600px;
-    margin:auto;
-}
-
-.card{
-    background:white;
+/* header card */
+.header{
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(10px);
     border-radius:25px;
-    padding:30px;
+    padding:25px;
     text-align:center;
-    box-shadow:0 8px 25px rgba(0,0,0,0.12);
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
 }
 
-h1{
-    color:#1f2937;
-    margin-bottom:30px;
-    font-size:34px;
-}
-
-.address{
-    color:#666;
-    margin-bottom:30px;
-    line-height:2;
-    font-size:16px;
-}
-
-.btn{
-    display:block;
-    text-decoration:none;
-    background:#2563eb;
-    color:white;
-    padding:15px;
-    border-radius:12px;
-    margin:12px 0;
-    font-weight:bold;
-    font-size:18px;
-    transition:0.3s;
-}
-
-.btn:hover{
-    opacity:0.9;
-}
-
-.space{
-    height:25px;
-}
-
-.section-title{
+/* logo circle */
+.logo{
+    width:80px;
+    height:80px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#3b82f6,#60a5fa);
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:center;
     font-size:30px;
-    color:#2563eb;
-    margin-bottom:25px;
-}
-
-.service{
-    background:linear-gradient(135deg,#2563eb,#3b82f6);
-    color:white;
-    padding:16px;
-    margin:12px 0;
-    border-radius:15px;
     font-weight:bold;
-    font-size:18px;
-    box-shadow:0 5px 12px rgba(37,99,235,0.35);
 }
 
-.footer{
-    text-align:center;
-    margin-top:25px;
-    color:#666;
+/* title */
+h1{
+    margin:15px 0 5px;
+    font-size:26px;
+}
+
+.subtitle{
+    opacity:0.8;
     font-size:14px;
 }
 
-</style></head><body><div class="container"><div class="card"><h1>🏢 دفتر خدمات هوشمند</h1><p class="address">
-📍 میدان حکیم سبزواری (حاج ملاهادی)<br>
-پاساژ جاجرمی - انتهای پاساژ
-</p><a class="btn" href="tel:09152527989">📞 تماس با ما</a>
+/* buttons */
+.btn{
+    display:block;
+    text-decoration:none;
+    padding:15px;
+    margin:10px 0;
+    border-radius:15px;
+    background: rgba(255,255,255,0.12);
+    color:white;
+    font-weight:bold;
+    text-align:center;
+    transition:0.3s;
+    border:1px solid rgba(255,255,255,0.2);
+}
 
+.btn:hover{
+    background: rgba(255,255,255,0.25);
+    transform:scale(1.02);
+}
+
+/* section */
+.section-title{
+    margin:25px 0 10px;
+    font-size:20px;
+    text-align:center;
+}
+
+/* service cards */
+.service{
+    background: rgba(255,255,255,0.12);
+    border:1px solid rgba(255,255,255,0.2);
+    padding:14px;
+    margin:10px 0;
+    border-radius:15px;
+    font-size:15px;
+    transition:0.3s;
+}
+
+.service:hover{
+    background: rgba(255,255,255,0.2);
+    transform:scale(1.02);
+}
+
+/* footer */
+.footer{
+    text-align:center;
+    margin:25px 0 10px;
+    font-size:12px;
+    opacity:0.7;
+}
+
+</style></head><body><div class="container"><div class="header"><div class="logo">S</div><h1>Smart Services Office</h1><div class="subtitle">کارت ویزیت هوشمند |</div><p style="margin-top:15px; font-size:13px; opacity:0.8;">
+📍 سبزوار | پاسخگویی سریع و آنلاین
+</p></div><!-- buttons --><a class="btn" href="tel:09152527989">📞 تماس مستقیم</a>
 <a class="btn" href="https://wa.me/989152527989">💬 واتساپ</a>
-
 <a class="btn" href="https://instagram.com/Smart_Services_office">📷 اینستاگرام</a>
+<a class="btn" href="https://maps.google.com/?q=Sabzevar">📍 مسیریابی</a>
 
-<div class="space"></div><h2 class="section-title">✨ خدمات ما ✨</h2><div class="service">💳 ارائه انواع اعتبارات بانکی</div><div class="service">🛒 خرید اقساطی کالا</div><div class="service">🛡 خدمات بیمه‌ای از تمامی شرکت‌ها</div><div class="service">🌐 فروش سرویس اینترنت پیشگامان</div><div class="service">💻 طراحی سایت و پشتیبانی کسب‌وکار</div><div class="service">📨 پنل پیامکی و پیامک انبوه</div><div class="service">📱 طراحی QR Code و کارت ویزیت هوشمند</div><div class="service">⚡ انواع خدمات آنلاین</div></div><div class="footer">
-Smart Services Office | Sabzevar
+<!-- services --><div class="section-title">✨ خدمات ما</div><div class="service">💳 اعتبارات بانکی و خرید اقساطی کالا</div>
+<div class="service">🛡 خدمات بیمه از تمامی شرکت‌ها</div>
+<div class="service">🌐 اینترنت پیشگامان</div>
+<div class="service">💻 طراحی سایت و پشتیبانی کسب‌وکار</div>
+<div class="service">📨 پنل پیامکی و پیامک انبوه</div>
+<div class="service">📱 طراحی QR Code و کارت ویزیت هوشمند</div>
+<div class="service">⚡ انواع خدمات آنلاین</div><div class="footer">
+© Smart Services Office | Sabzevar
 </div></div></body>
 </html>
